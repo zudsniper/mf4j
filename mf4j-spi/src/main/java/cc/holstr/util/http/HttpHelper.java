@@ -20,6 +20,7 @@ public class HttpHelper {
 
 	/**
 	 * Perform a GET request onto a web address.
+	 *
 	 * @param url The web address of which is to be connected to.
 	 *
 	 * @return An InputStream containing the response from querying the web address specified.
@@ -32,13 +33,13 @@ public class HttpHelper {
 		connection.setRequestProperty("accept-charset", CHARSET);
 		connection.setRequestProperty("content-length", "0");
 
-		InputStream response = connection.getInputStream();
-		return response;
+		return connection.getInputStream();
 	}
 
 	/**
 	 * Perform a POST request onto a web address.
-	 * @param url The web address of which is to be connected to.
+	 *
+	 * @param url        The web address of which is to be connected to.
 	 * @param jsonString String of json to be sent in the POST request.
 	 *
 	 * @return An InputStream containing the response from querying the web address specified.
@@ -60,12 +61,13 @@ public class HttpHelper {
 			e.printStackTrace();
 		}
 
-		InputStream response = connection.getInputStream();
-		return response;
+		return connection.getInputStream();
 	}
+
 	/**
 	 * Perform a PUT request onto a web address.
-	 * @param url The web address of which is to be connected to.
+	 *
+	 * @param url        The web address of which is to be connected to.
 	 * @param jsonString String of json to be sent in the POST request.
 	 *
 	 * @return An InputStream containing the response from querying the web address specified.
@@ -88,7 +90,6 @@ public class HttpHelper {
 			e.printStackTrace();
 		}
 
-		InputStream response = connection.getInputStream();
-		return response;
+		return connection.getInputStream();
 	}
 }
