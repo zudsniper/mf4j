@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/mf4j-api/mf4j-api.iml" filepath="$PROJECT_DIR$/mf4j-api/mf4j-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mf4j-example-usage/mf4j-example-usage.iml" filepath="$PROJECT_DIR$/mf4j-example-usage/mf4j-example-usage.iml" />
       <module fileurl="file://$PROJECT_DIR$/mf4j-quandl/mf4j-quandl.iml" filepath="$PROJECT_DIR$/mf4j-quandl/mf4j-quandl.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mf4j-spi/mf4j-api.iml" filepath="$PROJECT_DIR$/mf4j-spi/mf4j-api.iml" />
     </modules>
   </component>
 </project>

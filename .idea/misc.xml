@@ -5,6 +5,10 @@
       <list>
         <option value="$PROJECT_DIR$/mf4japi/pom.xml" />
         <option value="$PROJECT_DIR$/mf4jquandl/pom.xml" />
+        <option value="$PROJECT_DIR$/examplemf4jusage/pom.xml" />
+        <option value="$PROJECT_DIR$/mf4j-quandl/pom.xml" />
+        <option value="$PROJECT_DIR$/mf4j-api/pom.xml" />
+        <option value="$PROJECT_DIR$/mf4j-example-usage/pom.xml" />
       </list>
     </option>
   </component>

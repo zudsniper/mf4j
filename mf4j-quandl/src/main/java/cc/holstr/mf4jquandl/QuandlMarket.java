@@ -11,6 +11,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import java.io.InputStreamReader;
+import java.text.SimpleDateFormat;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
@@ -22,6 +23,7 @@ import java.util.List;
 public class QuandlMarket implements Market {
 
 	public static final DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+	public static final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
 	private final String urlstub;
 	private final String apikey;
@@ -54,6 +56,10 @@ public class QuandlMarket implements Market {
 		} catch(Exception e) {
 			throw new MarketRetrievalException(e.getMessage());
 		}
+	}
+
+	private String toQuandlDate(ZonedDateTime dateTime) {
+		return dateTime.toString().substring(0, dateTime.toString().indexOf("T"));
 	}
 
 	/**
@@ -100,6 +106,7 @@ public class QuandlMarket implements Market {
 		} catch(QuandlMalformedJSONException e) {
 			throw e;
 		} catch(Exception e) {
+			e.printStackTrace();
 			throw new MarketRetrievalException(e.getMessage());
 		}
 		return mks;

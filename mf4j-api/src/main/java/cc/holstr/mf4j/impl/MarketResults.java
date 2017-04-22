@@ -12,6 +12,7 @@ public class MarketResults extends ArrayList<MarketResult> {
 	/**
 	 * @return A HashMap with ZonedDateTime keys and MarketResult values compiled from the superclass ArrayList of MarketResults.
 	 */
+	//TODO: finish impl
 	public HashMap<ZonedDateTime, MarketResult> toMap() {
 		return null;
 	}
