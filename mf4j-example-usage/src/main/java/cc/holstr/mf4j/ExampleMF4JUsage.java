@@ -12,7 +12,8 @@ import java.time.ZonedDateTime;
  */
 public class ExampleMF4JUsage {
 
-	private static final String API_KEY = "RMq1SdgUHN5jKeMeJxC2";
+	//TODO: always redact actual api key
+	private static final String API_KEY = "N/A";
 
 	public static void main(String[] args) throws MarketRetrievalException {
 		Market market = new QuandlMarket(API_KEY, false);

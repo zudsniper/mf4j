@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cc.holstr.mf4j</groupId>
-    <artifactId>examplemf4jusage</artifactId>
-    <version>1.0</version>
+    <artifactId>example-mf4j-usage</artifactId>
+    <version>1.0.1</version>
 
     <name>MF4J Example Usage</name>
 
