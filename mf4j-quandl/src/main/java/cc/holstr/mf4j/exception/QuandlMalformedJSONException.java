@@ -1,4 +1,4 @@
-package cc.holstr.mf4jquandl.exception;
+package cc.holstr.mf4j.exception;
 
 import cc.holstr.mf4j.exception.MarketRetrievalException;
 

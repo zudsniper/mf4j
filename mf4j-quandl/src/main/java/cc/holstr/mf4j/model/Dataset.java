@@ -1,5 +1,5 @@
 
-package cc.holstr.mf4jquandl.model;
+package cc.holstr.mf4j.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

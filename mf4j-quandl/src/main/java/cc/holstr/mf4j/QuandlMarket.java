@@ -1,11 +1,10 @@
-package cc.holstr.mf4jquandl;
+package cc.holstr.mf4j;
 
-import cc.holstr.mf4j.Market;
 import cc.holstr.mf4j.exception.MarketRetrievalException;
+import cc.holstr.mf4j.exception.QuandlMalformedJSONException;
 import cc.holstr.mf4j.impl.MarketResult;
 import cc.holstr.mf4j.impl.MarketResults;
-import cc.holstr.mf4jquandl.exception.QuandlMalformedJSONException;
-import cc.holstr.mf4jquandl.model.QuandlResponse;
+import cc.holstr.mf4j.model.QuandlResponse;
 import cc.holstr.util.http.HttpHelper;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -19,6 +18,14 @@ import java.util.List;
 /**
  * Created by Jason McElhenney on 4/21/17.
  * zudsniper on GitHub.
+ */
+
+/**
+ * The cc.holstr.mf4j.QuandlMarket class is an implementation of the [mf4j-api] cc.holstr.mf4j.Market inferface that queries the Quandl
+ * Databases for statistical data.
+ * @implNote the marketCap variable in [mf4j-api] cc.holstr.mf4j.impl.MarketResult is not populated by this implementation. This is because
+ * the Market Capitalisation is not available from Quandl's base api, and a separate API query for the single value would be increase execution
+ * speed overhead too much.
  */
 public class QuandlMarket implements Market {
 

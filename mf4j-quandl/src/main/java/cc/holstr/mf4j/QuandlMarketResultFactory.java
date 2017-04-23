@@ -1,7 +1,7 @@
-package cc.holstr.mf4jquandl;
+package cc.holstr.mf4j;
 
+import cc.holstr.mf4j.exception.QuandlMalformedJSONException;
 import cc.holstr.mf4j.impl.MarketResult;
-import cc.holstr.mf4jquandl.exception.QuandlMalformedJSONException;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
