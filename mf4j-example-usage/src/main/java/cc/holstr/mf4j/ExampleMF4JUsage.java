@@ -2,7 +2,6 @@ package cc.holstr.mf4j;
 
 import cc.holstr.mf4j.exception.MarketRetrievalException;
 import cc.holstr.mf4j.impl.MarketResults;
-import cc.holstr.mf4jquandl.QuandlMarket;
 
 import java.time.ZonedDateTime;
 

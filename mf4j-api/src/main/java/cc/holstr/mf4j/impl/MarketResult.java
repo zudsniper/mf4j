@@ -27,10 +27,13 @@ public class MarketResult {
 	private double exDividend;
 	private double splitRatio;
 
+	private double change;
+	private double changePercent;
+
 	public MarketResult() {
 	}
 
-	public MarketResult(ZonedDateTime timestamp, String ticker, BigDecimal marketCap, BigDecimal volume, BigDecimal adjustedVolume, double high, double low, double open, double close, double adjustedHigh, double adjustedLow, double adjustedOpen, double adjustedClose, double exDividend, double splitRatio) {
+	public MarketResult(ZonedDateTime timestamp, String ticker, BigDecimal marketCap, BigDecimal volume, BigDecimal adjustedVolume, double high, double low, double open, double close, double adjustedHigh, double adjustedLow, double adjustedOpen, double adjustedClose, double exDividend, double splitRatio, double change, double changePercent) {
 		this.timestamp = timestamp;
 		this.ticker = ticker;
 		this.marketCap = marketCap;
@@ -46,6 +49,8 @@ public class MarketResult {
 		this.adjustedClose = adjustedClose;
 		this.exDividend = exDividend;
 		this.splitRatio = splitRatio;
+		this.change = change;
+		this.changePercent = changePercent;
 	}
 
 	public ZonedDateTime getTimestamp() {
@@ -166,5 +171,21 @@ public class MarketResult {
 
 	public void setSplitRatio(double splitRatio) {
 		this.splitRatio = splitRatio;
+	}
+
+	public double getChange() {
+		return change;
+	}
+
+	public void setChange(double change) {
+		this.change = change;
+	}
+
+	public double getChangePercent() {
+		return changePercent;
+	}
+
+	public void setChangePercent(double changePercent) {
+		this.changePercent = changePercent;
 	}
 }
