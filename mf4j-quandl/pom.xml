@@ -6,7 +6,7 @@
 
     <groupId>cc.holstr.mf4j</groupId>
     <artifactId>mf4j-quandl</artifactId>
-    <version>1.0</version>
+    <version>1.0.1</version>
 
     <name>Market Facade 4 Java Quandl Implementation</name>
 
@@ -36,20 +36,30 @@
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
             <version>1.10.19</version>
+            <scope>test</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.powermock/powermock-api-mockito -->
         <dependency>
             <groupId>org.powermock</groupId>
             <artifactId>powermock-api-mockito</artifactId>
             <version>1.6.5</version>
+            <scope>test</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.powermock/powermock-module-junit4 -->
         <dependency>
             <groupId>org.powermock</groupId>
             <artifactId>powermock-module-junit4</artifactId>
             <version>1.6.5</version>
+            <scope>test</scope>
         </dependency>
-
+       <!-- &lt;!&ndash; https://mvnrepository.com/artifact/org.easymock/easymock &ndash;&gt;
+        <dependency>
+            <groupId>org.easymock</groupId>
+            <artifactId>easymock</artifactId>
+            <version>3.4</version>
+            <scope>test</scope>
+        </dependency>
+-->
     </dependencies>
 
     <build>

@@ -42,11 +42,11 @@ public class QuandlMarket implements Market {
 		gson = new GsonBuilder().create();
 	}
 
-	private String getUrl(String ticker) {
+	public String getUrl(String ticker) {
 		return urlstub + ticker + ".json?api_key=" + apikey;
 	}
 
-	private MarketResult singleDayQuery(String url) throws MarketRetrievalException {
+	public MarketResult singleDayQuery(String url) throws MarketRetrievalException {
 		try {
 			InputStreamReader reader = new InputStreamReader(HttpHelper.get(url), "UTF-8");
 			QuandlResponse response = gson.fromJson(reader, QuandlResponse.class);
@@ -57,11 +57,6 @@ public class QuandlMarket implements Market {
 			throw new MarketRetrievalException(e.getMessage());
 		}
 	}
-
-	private String toQuandlDate(ZonedDateTime dateTime) {
-		return dateTime.toString().substring(0, dateTime.toString().indexOf("T"));
-	}
-
 	/**
 	 * @param ticker the stock ticker being queried.
 	 *
