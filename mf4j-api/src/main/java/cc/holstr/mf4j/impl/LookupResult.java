@@ -42,4 +42,13 @@ public class LookupResult {
 	public void setExchange(String exchange) {
 		this.exchange = exchange;
 	}
+
+	@Override
+	public String toString() {
+		return "LookupResult{" +
+				"ticker='" + ticker + '\'' +
+				", name='" + name + '\'' +
+				", exchange='" + exchange + '\'' +
+				'}';
+	}
 }

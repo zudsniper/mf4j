@@ -188,4 +188,27 @@ public class MarketResult {
 	public void setChangePercent(double changePercent) {
 		this.changePercent = changePercent;
 	}
+
+	@Override
+	public String toString() {
+		return "MarketResult{" +
+				"timestamp=" + timestamp +
+				", ticker='" + ticker + '\'' +
+				", marketCap=" + marketCap +
+				", volume=" + volume +
+				", adjustedVolume=" + adjustedVolume +
+				", high=" + high +
+				", low=" + low +
+				", open=" + open +
+				", close=" + close +
+				", adjustedHigh=" + adjustedHigh +
+				", adjustedLow=" + adjustedLow +
+				", adjustedOpen=" + adjustedOpen +
+				", adjustedClose=" + adjustedClose +
+				", exDividend=" + exDividend +
+				", splitRatio=" + splitRatio +
+				", change=" + change +
+				", changePercent=" + changePercent +
+				'}';
+	}
 }
